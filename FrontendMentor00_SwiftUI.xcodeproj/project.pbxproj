@@ -52,8 +52,9 @@
 		2E95AB3126687ED100443CF5 /* FrontendMentor00_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2E95AB4226687EEB00443CF5 /* Models */,
 				2E95AB3226687ED100443CF5 /* FrontendMentor00_SwiftUIApp.swift */,
-				2E95AB3426687ED100443CF5 /* ContentView.swift */,
+				2E95AB4126687EE300443CF5 /* Views */,
 				2E95AB3626687ED300443CF5 /* Assets.xcassets */,
 				2E95AB3B26687ED300443CF5 /* Info.plist */,
 				2E95AB3826687ED300443CF5 /* Preview Content */,
@@ -67,6 +68,21 @@
 				2E95AB3926687ED300443CF5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E95AB4126687EE300443CF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E95AB3426687ED100443CF5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E95AB4226687EEB00443CF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

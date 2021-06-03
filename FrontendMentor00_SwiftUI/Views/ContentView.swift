@@ -12,22 +12,27 @@ struct ContentView: View {
         ZStack {
             Color("Background")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            VStack {
-                Image("Header")
-                    .frame(height: 300)
-                    .clipped()
+            ScrollView(.vertical) {
                 VStack {
-                    HStack {
-                        Heading(text: "Get", color: .white)
-                        Heading(text: "insights", color: Color("Emphasis"))
-                        Heading(text: "that", color: .white)
+                    Image("Header")
+                        .aspectRatio(contentMode: .fit)
+                    VStack {
+                        HStack {
+                            Heading(text: "Get", color: .white)
+                            Heading(text: "insights", color: Color("Emphasis"))
+                            Heading(text: "that", color: .white)
+                        }
+                        Heading(text: "help your business grow.", color: .white)
                     }
-                    Heading(text: "help your business grow.", color: .white)
+                    .padding()
+                    Text("Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.")
+                        .foregroundColor(Color("Gray"))
+                        .font(.system(size: 16))
+                        .multilineTextAlignment(.center)
+                        .lineSpacing(8)
+                        .frame(width: 300)
                 }
-                
             }
-            .foregroundColor(Color("Container"))
-            .padding()
         }
     }
 }
